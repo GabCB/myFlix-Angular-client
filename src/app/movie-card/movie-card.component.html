@@ -1,5 +1,5 @@
 <app-top-bar></app-top-bar>
-<div style="display: flex;width:100%;overflow: auto;">
+<div style="display: flex; flex-wrap:wrap; width:100%; overflow: auto;">
   <mat-card *ngFor="let movie of movies;" style="flex: 1 1 auto;margin:1rem">
     <mat-card-header>
       <mat-card-title>{{movie.Title}}</mat-card-title>
