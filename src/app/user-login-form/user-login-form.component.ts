@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 // This import is used to close the dialog on success
 import { MatDialogRef } from '@angular/material/dialog';
