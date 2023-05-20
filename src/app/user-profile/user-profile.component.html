@@ -8,7 +8,7 @@
   <mat-list>
     <mat-list-item *ngFor="let movie of favoriteMovies">
       <!-- <mat-icon matListItemIcon>folder</mat-icon> -->
-      <img matListItemAvatar src="{{movie.ImageURL}}" />
+      <img matListItemAvatar src="{{movie.ImagePath}}" />
       <div matListItemTitle>{{movie.Title}}</div>
       <div matListItemLine>{{movie.Director.Name}}</div>
     </mat-list-item>
