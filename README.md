@@ -1,6 +1,18 @@
 # MyFlixAngularClient
+![myFlix Angular]( https://i.imgur.com/RL8OFkP.png) <br>
+## Overview
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+
+## Table of contents
+- [Overview](#overview)
+- [Development server](#development-server)
+- [Code scaffolding](#code-scaffolding)
+- [Build](#build)
+- [Running unit tests](#running-unit-tests)
+- [Running end-to-end tests](#running-end-to-end-tests)
+- [Further help](#further-help)
+- [Links](#links)
 
 ## Development server
 
@@ -25,3 +37,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Links
+[Code URL](https://github.com/GabCB/myFlix-Angular-client) <br>
+[Live site]() <br>
