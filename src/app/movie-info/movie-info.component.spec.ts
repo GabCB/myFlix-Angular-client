@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MovieInfoComponent } from './movie-info.component';
 

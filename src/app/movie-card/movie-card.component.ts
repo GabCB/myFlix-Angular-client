@@ -21,6 +21,9 @@ export class MovieCardComponent {
     this.getMovies();
   }
 
+  /**
+  * Calls the get movies method on the API.
+  */
   getMovies(): void {
     this.fetchApiData.getAllMovies().subscribe((resp: any) => {
       this.movies = resp;
@@ -29,6 +32,11 @@ export class MovieCardComponent {
     });
   }
 
+   /**
+  * Opens the genre dialog.
+  * @param name The genre's name to show on the dialog (title)
+  * @param description The genre's description to show on the dialog
+  */
   openGenre(name: string, description: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -39,6 +47,11 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+  * Opens the director dialog.
+  * @param name The director's name to show on the dialog (title)
+  * @param bio The director's biography to show on the dialog
+  */
   openDirector(name: string, bio: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -49,6 +62,10 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+  * Opens the movie description dialog.
+  * @param description The text to show on the dialog
+  */
   openSynopsis(description: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -59,6 +76,10 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+  * Calls the add favorite movie method on the API.
+  * @param id The movie ID
+  */
   addFavorite(id: string): void {
     this.fetchApiData.addFavoriteMovie(id).subscribe((result) => {
 
@@ -68,10 +89,18 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+  * Calls the check favorite movie method on the API.
+  * @param id The movie ID
+  */
   isFavorite(id: string): boolean {
     return this.fetchApiData.isFavoriteMovie(id);
   }
 
+  /**
+  * Calls the delete favorite movie method on the API.
+  * @param id The movie ID
+  */
   removeFavorite(id: string): void {
     this.fetchApiData.deleteFavoriteMovie(id).subscribe((result) => {
       this.snackBar.open('Movie removed from favorites.', 'OK', {
