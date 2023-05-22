@@ -1,12 +1,15 @@
 {
   "name": "my-flix-angular-client",
   "version": "0.0.0",
+  "homepage": "https://gabcb.github.io/myFlix-Angular-client/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
