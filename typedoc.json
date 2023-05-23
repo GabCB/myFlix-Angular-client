@@ -13,11 +13,7 @@
   "suppressExcessPropertyErrors": "true",
   "suppressImplicitAnyIndexErrors": "true",
   "module": "commonjs"
-  }
+}
 
-"scripts": {
-  ...
-  "typedoc": "typedoc --options typedoc.json src/index.ts"
-},
 
 
